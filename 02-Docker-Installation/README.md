@@ -1,7 +1,7 @@
 # Docker Installation
 
 ## Docker Installations on Amazon Linux
-yum install docker -y
+yum install docker -y:
 systemctl start docker
 
 ### Docker Instalaltion on Ubuntu
