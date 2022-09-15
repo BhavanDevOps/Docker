@@ -25,9 +25,9 @@ docker run --name kube1 -p 80:80 --platform linux/amd64 -d  teach2devops/kubengi
 http://localhost
 
 ## Sample Output
-kalyanreddy@Kalyans-Mac-mini-2 ~ % docker run --name kube1 -p 80:80 --platform linux/amd64 -d  teach2devops/kubenginx:1.0.0
+localhost ~ % docker run --name kube1 -p 80:80 --platform linux/amd64 -d  teach2devops/kubenginx:1.0.0
 370f238d97556813a4978572d24983d6aaf80d4300828a57f27cda3d3d8f0fec
-kalyanreddy@Kalyans-Mac-mini-2 ~ % curl http://localhost
+localhost ~ % curl http://localhost
 <!DOCTYPE html>
 <html>
    <body style="background-color:lightgoldenrodyellow;">
@@ -36,7 +36,7 @@ kalyanreddy@Kalyans-Mac-mini-2 ~ % curl http://localhost
       <p>Application Version: V1</p>
    </body>
 </html>%
-kalyanreddy@Kalyans-Mac-mini-2 ~ % 
+localhost ~ % 
 
 ```
 
