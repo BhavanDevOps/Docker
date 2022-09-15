@@ -8,24 +8,24 @@ docker login
 
 ## Step-2: Pull Image from Docker Hub
 ```
-docker pull stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE
+docker pull teach2devops/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE
 ```
 
 ## Step-3: Run the downloaded Docker Image & Access the Application
 - Copy the docker image name from Docker Hub
 ```
-docker run --name app1 -p 80:8080 -d stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE
+docker run --name app1 -p 80:8080 -d teach2devops/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE
 http://localhost/hello
 
 # For Mac with Apple Chips (use different application)
 Step-1: Install Docker with Apple Chips binary (https://docs.docker.com/desktop/mac/install/) on your mac machine
 
 Step-2: Run the simple Nginx Application container. 
-docker run --name kube1 -p 80:80 --platform linux/amd64 -d  stacksimplify/kubenginx:1.0.0
+docker run --name kube1 -p 80:80 --platform linux/amd64 -d  teach2devops/kubenginx:1.0.0
 http://localhost
 
 ## Sample Output
-kalyanreddy@Kalyans-Mac-mini-2 ~ % docker run --name kube1 -p 80:80 --platform linux/amd64 -d  stacksimplify/kubenginx:1.0.0
+kalyanreddy@Kalyans-Mac-mini-2 ~ % docker run --name kube1 -p 80:80 --platform linux/amd64 -d  teach2devops/kubenginx:1.0.0
 370f238d97556813a4978572d24983d6aaf80d4300828a57f27cda3d3d8f0fec
 kalyanreddy@Kalyans-Mac-mini-2 ~ % curl http://localhost
 <!DOCTYPE html>
