@@ -2,6 +2,7 @@
 
 ## Docker Installations on Amazon Linux
 yum install docker -y
+systemctl start docker
 
 ### Docker Instalaltion on Ubuntu
 
@@ -21,6 +22,9 @@ Finally, update apt and install Docker with the following commands:
 
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+systemctl status docker
+systemct start docker
+
 4. Add your user to the Docker group
 In order to be able to use Docker without having to invoke it with sudo (which can lead to security issues), you must add your user to the docker group with:
 
